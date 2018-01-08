@@ -6,10 +6,10 @@ return [
 
     'default' => $db_config['connection'],
 
-    'connection' => [
+    'connections' => [
 
         'sqlite' => [
-            'dirver' => 'sqlite',
+            'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
         ],
@@ -23,7 +23,7 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
-            'collation' => 'utf8md4_unicode_ci',
+            'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'strict' => true,
             'engine' => null,
@@ -38,7 +38,7 @@ return [
             'password' => $db_config['password'],
             'charset'  => 'utf8',
             'prefix'   => '',
-            'schema'   => public,
+            'schema'   => 'public',
             'sslmode'  => 'prefer',
         ],
 
