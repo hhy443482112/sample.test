@@ -8563,7 +8563,7 @@ section.user_info h1 {
 
 /* forms */
 
-#follow_form button {
+.btn-follow {
   margin: 0 auto;
   display: block;
   margin-top: 25px;
@@ -8628,7 +8628,6 @@ input {
 }
 
 .statuses li {
-
   padding: 10px 0;
   border-top: 1px solid #e8e8e8;
   position: relative;
